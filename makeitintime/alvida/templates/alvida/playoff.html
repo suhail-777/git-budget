@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<th>Team A</th>
+		<th>vs</th>
+		<th>Team B</th>
+	</tr>
+	{% for match in schedule %}
+	<tr>
+		<td>{{match.0}}</td>
+		<td> vs </td>
+		<td>{{match.1}}</td>
+	</tr>
+{% endfor %}
+</table>
